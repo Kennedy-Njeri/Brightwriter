@@ -7,7 +7,7 @@ from .models import Order , Type , AcademicLevel, Format
 
 class OrderAdmin(admin.ModelAdmin):
 
-    list_display = ("user", "type", "academic", "format",)
+    list_display = ("user", "type", "academic", "format", "paid", "email", )
 
 
 

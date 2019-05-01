@@ -25,7 +25,7 @@ SECRET_KEY = 'd_2b^138p+)n8+y@gy9%x$7n#vk(l_7t89zwn0%na5fc3)c!%2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost:8080', 'dfd38b9a.ngrok.io']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'writting_orders',
     'crispy_forms',
     'django.contrib.humanize',
+    'paypal.standard.ipn',
+    'payment'
 ]
 
 MIDDLEWARE = [
@@ -153,10 +155,15 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'mistakenz123@gmail.com'
+
 SERVER_EMAIL = 'securesally@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mistakenz123@gmail.com'
 EMAIL_HOST_PASSWORD = 'qlwcpapjlisegoie'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
+
+PAYPAL_RECEIVER_EMAIL = 'mistakenz123-facilitator@gmail.com'
+PAYPAL_TEST = True

@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 import datetime
+from paypal.standard.ipn.signals import valid_ipn_received
+from paypal.standard.models import ST_PP_COMPLETED
 
 
 
@@ -41,6 +43,25 @@ class Order(models.Model):
     total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2, null=True)
     paid = models.BooleanField(default=False)
     email = models.EmailField(null=True)
+
+
+    def show_me_the_money(sender, **kwargs):
+        ipn_obj = sender
+        if ipn_obj.payment_status == ST_PP_COMPLETED:
+            # Undertake some action depending upon `ipn_obj`.
+
+           return Order.objects.update(paid=True)
+
+        else:
+
+            return Order.objects.update(paid=False)
+
+
+
+    valid_ipn_received.connect(show_me_the_money)
+
+
+
 
     @property
     def total_cost(self):
