@@ -33,12 +33,12 @@ class Order(models.Model):
     type = models.ForeignKey(Type, on_delete=models.CASCADE)
     academic = models.ForeignKey(AcademicLevel, on_delete=models.CASCADE, null=True)
     topic = models.CharField(max_length=30)
-    pages = models.IntegerField(choices=list(zip(range(1, 10), range(1, 10))), unique=True)
+    pages = models.IntegerField(choices=list(zip(range(1, 10), range(1, 10))))
     urgency = models.IntegerField(choices=list(zip(range(1, 10), range(0, 10))), default=0)
     format = models.ForeignKey(Format, on_delete=models.CASCADE, null=True)
     instructions = models.TextField(max_length=200, null=True)
     pdf = models.FileField(upload_to='uploads/pdfs', null=True, blank=True)
-    total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2)
+    total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2, null=True)
     paid = models.BooleanField(default=False)
 
     @property

@@ -1,22 +1,49 @@
 {% extends 'base.html' %}
+{% load humanize %}
 
 {% block content %}
 
-<div class="content-section">
 
-      <div class="media">
 
-          {% if orders %}
+ <div class="row">
+        <div class="col-md-12">
+ <div class="content-section">
+
+ <h2>Order List</h2>
+<div class="table-responsive">
+<table class="table mb-0">
+    <thead>
+      <tr>
+          <th>No</th>
+          <th>Topic</th>
+          <th>Instructions</th>
+        <th>Urgency</th>
+          <th>Pages</th>
+          <th>Cost(USD)</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+    {% if orders %}
 
           <ol>
 
-          {% for order in orders %}
 
-           <p>{{ order.type }} {{ order.topic }} {{ order.pages }} {{ order.deadline }} {{ order.pdf.url }}</p>
+    {% for order in orders %}
+    <tr>
+         <td>{{ order.id }}</td>
+        <td>{{ order.topic }}</td>
+          <td>{{ order.instructions }}</td>
+        <td>{{ order.urgency }}</td>
+    <td>{{ order.pages }}</td>
+    <td>{{ order.total|intcomma }}</td>
 
-          {% endfor %}
+    </tr>
 
-          </ol>
+
+{% endfor %}
+               </ol>
 
 
           {% else %}
@@ -29,15 +56,23 @@
 
 
 
+ </tbody>
 
 
 
 
-
-
+  </table>
+</div>
 
  </div>
-     </div>
+        </div>
+</div>
+
+
+
+
+
+
 
 
 {% endblock %}

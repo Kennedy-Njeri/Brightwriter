@@ -57,20 +57,20 @@ def account(request):
 
 
 
-class OrderCreateView(SuccessMessageMixin, CreateView):
-    model = Order
-    fields = ('type', 'academic', 'topic', 'pages', 'format', 'urgency', 'instructions', 'pdf',)
-    success_url = reverse_lazy('order-list')
-    template_name = 'create-order.html'
-    success_message = 'Your Order has Been successfully '
+#class OrderCreateView(SuccessMessageMixin, CreateView):
+    #model = Order
+    #fields = ('type', 'academic', 'topic', 'pages', 'format', 'urgency', 'instructions', 'pdf',)
+    #success_url = reverse_lazy('order-list')
+    #template_name = 'create-order.html'
+    #success_message = 'Your Order has Been successfully '
 
 
 
-    def form_valid(self, form):
+   # def form_valid(self, form):
 
-        form.instance.user = self.request.user
+        #form.instance.user = self.request.user
 
-        return super().form_valid(form)
+        #return super().form_valid(form)
 
 
 
@@ -87,3 +87,27 @@ class OrderListView(ListView):
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user)
 
+
+
+def order_create(request):
+
+    if request.method == 'POST':
+
+        form = OrderCreateForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            order = form.save(commit=False)
+            order.user = request.user
+            order = form.save()
+
+            #order_created.delay(order.id)
+
+            return redirect('order-list')
+
+            #return render(request, 'order-list', )
+
+    else:
+
+        form = OrderCreateForm()
+
+    return render(request, 'create-order.html', {'form': form})
