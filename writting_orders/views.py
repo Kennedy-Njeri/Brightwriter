@@ -14,6 +14,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from .models import Order
+from .tasks import order_created
 from django.contrib.messages.views import SuccessMessageMixin
 from .forms import OrderCreateForm
 
@@ -75,9 +76,6 @@ def account(request):
 
 
 
-
-
-
 class OrderListView(ListView):
     model = Order
     template_name = 'order_list.html'
@@ -100,7 +98,7 @@ def order_create(request):
             order.user = request.user
             order = form.save()
 
-            #order_created.delay(order.id)
+            order_created.delay(order.id)
 
             return redirect('order-list')
 
