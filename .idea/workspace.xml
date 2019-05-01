@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdec9159-baa2-4880-965f-17a61e66b063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/payment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/static/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/templates/canceled.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/templates/done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/templates/process.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting_orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting_orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting_orders/templates/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/templates/order_list.html" afterDir="false" />
-    </list>
+    <list default="true" id="cdec9159-baa2-4880-965f-17a61e66b063" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,19 +57,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writting/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-398">
+            <state relative-caret-position="-107">
               <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/payment/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-106">
+            <state relative-caret-position="-183">
               <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -201,7 +179,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
+    <option name="x" value="597" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -290,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="597" y="23" width="1440" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -524,16 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/payment/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writting_orders/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -582,8 +550,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writting/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398">
+        <state relative-caret-position="-107">
           <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
