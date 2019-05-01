@@ -26,4 +26,4 @@ class OrderCreateForm(forms.ModelForm):
 
         exclude = ('user',)
 
-        fields = ['type', 'academic', 'topic', 'pages', 'urgency', 'format', 'instructions', 'pdf',]
+        fields = ['type', 'academic', 'topic', 'pages', 'urgency', 'format', 'instructions', 'pdf', 'email']

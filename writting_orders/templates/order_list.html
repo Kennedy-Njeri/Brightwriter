@@ -19,6 +19,7 @@
           <th>Instructions</th>
         <th>Urgency</th>
           <th>Pages</th>
+          <th>Pdf</th>
           <th>Cost(USD)</th>
 
 
@@ -37,7 +38,13 @@
           <td>{{ order.instructions }}</td>
         <td>{{ order.urgency }}</td>
     <td>{{ order.pages }}</td>
+         <td>
+            <a href="{{ order.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
+              View Sent File
+            </a>
+          </td>
     <td>{{ order.total|intcomma }}</td>
+
 
     </tr>
 

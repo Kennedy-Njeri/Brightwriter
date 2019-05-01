@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdec9159-baa2-4880-965f-17a61e66b063" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/pdfs/132f1a58317ef252c54c14183fbbe675.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/uploads/pdfs/CPF_Spec_Software_Engineer_WS2020_Nairobi.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writting/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writting_orders/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writting_orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/writting_orders/templates/order_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/templates/order_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting_orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writting_orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/writting_orders/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
           <entry key="js" value="1" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="18" />
+          <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -44,21 +41,21 @@
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="18" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="424" />
+          <entry key="html" value="456" />
           <entry key="md" value="3" />
-          <entry key="py" value="1941" />
+          <entry key="py" value="1971" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="424" />
+          <entry key="HTML" value="456" />
           <entry key="Markdown" value="3" />
-          <entry key="Python" value="1941" />
+          <entry key="Python" value="1971" />
         </counts>
       </usages-collector>
     </session>
@@ -68,8 +65,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writting/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="154" column="45" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
+            <state relative-caret-position="-1475">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/writting/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/writting/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/writting_orders/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,22 +107,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writting_orders/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="39" column="74" lean-forward="true" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+            <state relative-caret-position="225">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writting_orders/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/writting_orders/templates/order_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="183">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -133,20 +151,11 @@
         <entry file="file://$PROJECT_DIR$/writting_orders/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="28" column="93" lean-forward="true" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
+              <caret line="28" column="106" selection-start-line="28" selection-start-column="106" selection-end-line="28" selection-end-column="106" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
-                <marker date="1556723774000" expanded="true" signature="201:202" ph="..." />
+                <marker date="1556725385000" expanded="true" signature="201:202" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writting_orders/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -155,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/writting_orders/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="71" />
+              <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="71" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -184,13 +193,15 @@
         <option value="$PROJECT_DIR$/writting_orders/templates/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/writting_orders/templates/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/writting_orders/templates/login.html" />
-        <option value="$PROJECT_DIR$/writting/settings.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/writting_orders/urls.py" />
-        <option value="$PROJECT_DIR$/writting_orders/forms.py" />
-        <option value="$PROJECT_DIR$/writting_orders/models.py" />
         <option value="$PROJECT_DIR$/writting_orders/views.py" />
+        <option value="$PROJECT_DIR$/writting/settings.py" />
         <option value="$PROJECT_DIR$/writting_orders/templates/order_list.html" />
+        <option value="$PROJECT_DIR$/writting_orders/models.py" />
+        <option value="$PROJECT_DIR$/writting_orders/forms.py" />
+        <option value="$PROJECT_DIR$/writting/__init__.py" />
+        <option value="$PROJECT_DIR$/writting/celery.py" />
       </list>
     </option>
   </component>
@@ -201,8 +212,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
-    <option name="y" value="139" />
+    <option name="x" value="141" />
+    <option name="y" value="101" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
   </component>
@@ -222,40 +233,12 @@
             <path>
               <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
               <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="sent_emails" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
               <item name="writting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
               <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
               <item name="writting_orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="writting_orders" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Writting-Hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Writting-Hub" type="462c0819:PsiDirectoryNode" />
-              <item name="writting_orders" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,14 +288,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-82" y="23" width="1440" height="793" extended-state="0" />
+    <frame x="141" y="101" width="1440" height="793" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23462088" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23462088" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.34094152" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.34094152" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="4" />
@@ -432,13 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writting/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="154" column="45" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writting_orders/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -452,7 +428,7 @@
     <entry file="file://$PROJECT_DIR$/writting_orders/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -482,20 +458,9 @@
     <entry file="file://$PROJECT_DIR$/writting_orders/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="71" />
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="71" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writting_orders/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="28" column="93" lean-forward="true" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-            <marker date="1556723774000" expanded="true" signature="201:202" ph="..." />
           </folding>
         </state>
       </provider>
@@ -504,16 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writting_orders/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="39" column="74" lean-forward="true" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,8 +485,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writting_orders/templates/order_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="183">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting_orders/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting_orders/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="28" column="106" selection-start-line="28" selection-start-column="106" selection-end-line="28" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+            <marker date="1556725385000" expanded="true" signature="201:202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1475">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writting_orders/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

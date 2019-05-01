@@ -40,6 +40,7 @@ class Order(models.Model):
     pdf = models.FileField(upload_to='uploads/pdfs', null=True, blank=True)
     total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2, null=True)
     paid = models.BooleanField(default=False)
+    email = models.EmailField(null=True)
 
     @property
     def total_cost(self):
