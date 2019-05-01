@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+
+{% block content %}
+<div class="row">
+        <div class="col-md-8">
+ <div class="content-section">
+
+
+
+<h1>Create your Order Here</h1>
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+<button type="submit" class="btn btn-primary">Submit order</button>
+</form>
+
+ </div>
+        </div>
+</div>
+
+
+
+
+{% endblock %}

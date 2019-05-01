@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="content-section">
+
+      <div class="media">
+
+          {% if orders %}
+
+          <ol>
+
+          {% for order in orders %}
+
+           <p>{{ order.type }} {{ order.topic }} {{ order.pages }} {{ order.deadline }} {{ order.pdf.url }}</p>
+
+          {% endfor %}
+
+          </ol>
+
+
+          {% else %}
+
+          <p>There Are no current orders</p>
+
+
+          {% endif %}
+
+
+
+
+
+
+
+
+
+
+
+ </div>
+     </div>
+
+
+{% endblock %}
