@@ -22,6 +22,7 @@
           <th>Pdf</th>
           <th>Cost(USD)</th>
            <th>Status</th>
+           <th>Process</th>
           <th>View Order</th>
 
 
@@ -37,7 +38,7 @@
     <tr>
          <td>{{ order.id }}</td>
         <td>{{ order.topic }}</td>
-          <td>{{ order.instructions }}</td>
+          <td>{{ order.instructions | safe }}</td>
         <td>{{ order.urgency }}</td>
     <td>{{ order.pages }}</td>
          <td>
@@ -52,6 +53,16 @@
         <td><button type="button" class="btn btn-success btn-sm">Paid</button></td>
 
         {% endif %}
+
+         {% if order.process == 'Processing' %}
+        <td><button type="button" class="btn btn-secondary btn-sm">{{ order.process }}</button></td>
+
+        {% else %}
+
+         <td><button type="button" class="btn btn-success btn-sm">{{ order.process }}</button></td>
+
+         {% endif %}
+
 
         <td><p><a class="btn btn-info btn-sm" href="{% url 'order-paid-detail' pk=order.pk %}">Order Details</a></p></td>
 

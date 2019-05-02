@@ -30,6 +30,12 @@ class Type(models.Model):
         return self.name
 
 
+PROCESS_CHOICES = (
+    ("Processing", ("Processing")),
+    ("Finished", ("Finished"))
+)
+
+
 class Order(models.Model):
     user = models.ForeignKey(User, related_name="user", on_delete=models.CASCADE, null=True)
     type = models.ForeignKey(Type, on_delete=models.CASCADE)
@@ -43,6 +49,7 @@ class Order(models.Model):
     total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2, null=True)
     paid = models.BooleanField(default=False)
     email = models.EmailField(null=True)
+    process = models.CharField(max_length=12, choices=PROCESS_CHOICES, default='Processing')
 
 
     def show_me_the_money(sender, **kwargs):
