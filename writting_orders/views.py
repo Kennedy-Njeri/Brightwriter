@@ -80,7 +80,11 @@ def account(request):
 
 
 """Lists Orders That Are Not Paid"""
-class OrderListView(ListView):
+class OrderListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
+
+    def test_func(self):
+        return self.request.user
+
     model = Order
     template_name = 'order_list.html'
     context_object_name = 'orders'
@@ -94,6 +98,9 @@ class OrderListView(ListView):
 """Creates A New Order"""
 
 def order_create(request):
+
+    if not request.user:
+        return redirect('home')
 
     if request.method == 'POST':
 
@@ -119,7 +126,11 @@ def order_create(request):
 
 
 """Displays List of Orders Paid By The User"""
-class PaidListView(ListView):
+class PaidListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
+
+    def test_func(self):
+        return self.request.user
+
     model = Order
     template_name = 'paid-list.html'
     context_object_name = 'orders'
@@ -133,6 +144,9 @@ class PaidListView(ListView):
 
 """Search For Orders Created or Paid"""
 def search(request):
+
+    if not request.user:
+        return redirect('home')
 
     queryset = Order.objects.filter(user=request.user)
 
