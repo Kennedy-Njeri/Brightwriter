@@ -18,6 +18,8 @@ from .tasks import order_created
 from django.contrib.messages.views import SuccessMessageMixin
 from .forms import OrderCreateForm
 
+from django.db.models import Count, Q
+
 # Create your views here.
 
 
@@ -115,10 +117,34 @@ def order_create(request):
 
 class PaidListView(ListView):
     model = Order
-    template_name = 'order_list.html'
+    template_name = 'paid-list.html'
     context_object_name = 'orders'
     paginate_by = 10
 
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user).filter(paid=True)
+
+
+
+def search(request):
+
+    queryset = Order.objects.all()
+
+    query = request.GET.get('q')
+
+    if query:
+
+        queryset = queryset.filter(
+
+            Q(topic__icontains=query) |
+            Q(paid__icontains=query)
+
+        ).distinct()
+
+    context = {
+
+        'queryset': queryset
+    }
+
+    return render(request, 'search_results.html', context)
