@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 import datetime
 from paypal.standard.ipn.signals import valid_ipn_received
 from paypal.standard.models import ST_PP_COMPLETED
-
+from tinymce import HTMLField
 
 
 class AcademicLevel(models.Model):
@@ -38,7 +38,7 @@ class Order(models.Model):
     pages = models.IntegerField(choices=list(zip(range(1, 10), range(1, 10))))
     urgency = models.IntegerField(choices=list(zip(range(1, 10), range(0, 10))), default=0)
     format = models.ForeignKey(Format, on_delete=models.CASCADE, null=True)
-    instructions = models.TextField(max_length=200, null=True)
+    instructions = HTMLField(null=True)
     pdf = models.FileField(upload_to='uploads/pdfs', null=True, blank=True)
     total = models.DecimalField(verbose_name="Total", max_digits=10, decimal_places=2, null=True)
     paid = models.BooleanField(default=False)

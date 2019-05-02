@@ -4,6 +4,16 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 
 from .models import User, Order
+from tinymce import TinyMCE
+
+
+
+
+class TinyMCEWidget(TinyMCE):
+    def use_required_attribute(self, *args):
+        return False
+
+
 
 
 class RegistrationForm(UserCreationForm):
@@ -19,6 +29,12 @@ class RegistrationForm(UserCreationForm):
 
 
 class OrderCreateForm(forms.ModelForm):
+
+    instructions = forms.CharField(
+        widget=TinyMCEWidget(
+            attrs={'required': False, 'cols': 30, 'rows': 10}
+        )
+    )
 
     class Meta:
 

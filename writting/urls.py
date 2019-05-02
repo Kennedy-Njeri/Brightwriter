@@ -10,4 +10,5 @@ urlpatterns = [
     path('', include('writting_orders.urls')),
     path('paypal/', include('paypal.standard.ipn.urls')),
     path('payment/', include('payment.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
