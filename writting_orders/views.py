@@ -84,7 +84,7 @@ class OrderListView(ListView):
 
 
     def get_queryset(self):
-        return self.model.objects.filter(user=self.request.user)
+        return self.model.objects.filter(user=self.request.user).filter(paid=False)
 
 
 
@@ -110,3 +110,15 @@ def order_create(request):
         form = OrderCreateForm()
 
     return render(request, 'create-order.html', {'form': form})
+
+
+
+class PaidListView(ListView):
+    model = Order
+    template_name = 'order_list.html'
+    context_object_name = 'orders'
+    paginate_by = 10
+
+
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user).filter(paid=True)

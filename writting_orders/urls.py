@@ -22,5 +22,6 @@ urlpatterns = [
     path('order-list/', views.OrderListView.as_view(), name='order-list'),
     #path('order/', views.OrderCreateView.as_view(), name='order-create'),
     path('create/', views.order_create, name='order-create'),
+    path('paid-list/', views.PaidListView.as_view(), name='paid-list'),
 
 ]

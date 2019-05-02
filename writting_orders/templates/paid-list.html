@@ -21,7 +21,6 @@
           <th>Pages</th>
           <th>Pdf</th>
           <th>Cost(USD)</th>
-            <th>Checkout</th>
 
 
       </tr>
@@ -45,7 +44,7 @@
             </a>
           </td>
     <td>{{ order.total|intcomma }}</td>
-        <td><a class="btn btn-info btn-sm" href="{% url 'process' pk=order.pk %}">Checkout</a></td>
+
 
 
     </tr>
