@@ -169,4 +169,4 @@ class OrderPaidDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 
 
     def get_queryset(self):
-        return self.model.objects.filter(user=self.request.user)
+        return self.model.objects.filter(user=self.request.user).filter(paid=True)

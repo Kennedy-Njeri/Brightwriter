@@ -89,6 +89,13 @@ class Order(models.Model):
         super(Order, self).save(*args, **kwargs)
 
 
+
+
+    class Meta:
+
+        ordering = ['id']
+
+
     def __str__(self):
 
         return str(self.user)
