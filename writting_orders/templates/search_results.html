@@ -22,7 +22,7 @@
           <th>Pdf</th>
           <th>Cost(USD)</th>
            <th>Status</th>
-           
+
 
 
       </tr>
@@ -50,6 +50,7 @@
          {% if order.paid %}
 
         <td><button type="button" class="btn btn-success btn-sm">Paid</button></td>
+        <td><p><a class="btn btn-info btn-sm" href="{% url 'order-paid-detail' pk=order.pk %}">Order Details</a></p></td>
 
 
         {% else %}

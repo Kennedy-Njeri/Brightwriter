@@ -19,6 +19,8 @@ from django.contrib.messages.views import SuccessMessageMixin
 from .forms import OrderCreateForm
 
 from django.db.models import Count, Q
+from django.contrib.auth.mixins import UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
@@ -77,7 +79,7 @@ def account(request):
 
 
 
-
+"""Lists Orders That Are Not Paid"""
 class OrderListView(ListView):
     model = Order
     template_name = 'order_list.html'
@@ -89,6 +91,7 @@ class OrderListView(ListView):
         return self.model.objects.filter(user=self.request.user).filter(paid=False)
 
 
+"""Creates A New Order"""
 
 def order_create(request):
 
@@ -115,6 +118,7 @@ def order_create(request):
 
 
 
+"""Displays List of Orders Paid By The User"""
 class PaidListView(ListView):
     model = Order
     template_name = 'paid-list.html'
@@ -127,9 +131,10 @@ class PaidListView(ListView):
 
 
 
+"""Search For Orders Created or Paid"""
 def search(request):
 
-    queryset = Order.objects.all()
+    queryset = Order.objects.filter(user=request.user)
 
     query = request.GET.get('q')
 
@@ -148,3 +153,20 @@ def search(request):
     }
 
     return render(request, 'search_results.html', context)
+
+
+"""Details the Orders Paid"""
+
+class OrderPaidDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
+
+    model = Order
+    context_object_name = 'order'
+    template_name = 'paid-list-detail.html'
+
+
+    def test_func(self):
+        return self.request.user
+
+
+    def get_queryset(self):
+        return self.model.objects.filter(user=self.request.user)

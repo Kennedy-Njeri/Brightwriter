@@ -24,5 +24,6 @@ urlpatterns = [
     path('create/', views.order_create, name='order-create'),
     path('paid-list/', views.PaidListView.as_view(), name='paid-list'),
     path('search/', views.search, name='search'),
+    path('order-paid/<int:pk>', views.OrderPaidDetailView.as_view(), name="order-paid-detail"),
 
 ]
