@@ -81,6 +81,8 @@ class OrderModelTests(TestCase):
             name="CHICAGO"
         )
 
+
+
         self.order = Order.objects.create(
             username=self.user,
             type=self.type,
@@ -91,37 +93,28 @@ class OrderModelTests(TestCase):
             format=self.format,
             instructions="Write in bold",
             pdf="server.pdf",
-            total=6000,
+            total=8000,
             paid=False,
             email="kennedy@gmail.com",
 
 
         )
+
+
 
     def test_order_is_assigned_id_on_creation(self):
         self.assertEquals(self.order.id, 1)
 
 
+    def test_total_cost_is_assigned_id_on_creation(self):
+        self.assertEquals(self.order.total_cost, 8000)
+        print ("the rate is {}".format(self.order.total_cost))
 
-    def total_cost_order(self):
 
-        self.order = Order.objects.create(
-            username=self.user,
-            type=self.type,
-            academic=self.academic,
-            topic="Networking",
-            pages=4,
-            urgency=3,
-            format=self.format,
-            instructions="Write in bold",
-            pdf="server.pdf",
-            total=6000,
-            paid=False,
-            email="kennedy@gmail.com",
 
-        )
 
-        self.assertEquals(self.order.id.total_cost, 6000)
+
+
 
 
 
