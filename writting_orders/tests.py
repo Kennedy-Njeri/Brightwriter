@@ -121,7 +121,7 @@ class OrderModelTests(TestCase):
 
         )
 
-        self.assertEquals(self.order.total_cost, 6000)
+        self.assertEquals(self.order.id.total_cost, 6000)
 
 
 
