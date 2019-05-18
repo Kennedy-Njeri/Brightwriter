@@ -37,7 +37,7 @@
     <tr>
          <td>{{ order.id }}</td>
         <td>{{ order.topic }}</td>
-          <td>{{ order.instructions }}</td>
+          <td>{{ order.instructions | safe }}</td>
         <td>{{ order.urgency }}</td>
     <td>{{ order.pages }}</td>
          <td>
