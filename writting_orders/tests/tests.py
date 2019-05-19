@@ -1,6 +1,7 @@
-from django.test import TestCase, Client
-from .models import Type, Order, AcademicLevel, Format
+from django.test import TestCase, Client, SimpleTestCase
+from writting_orders.models import Type, Order, AcademicLevel, Format
 from django.contrib.auth.models import User
+
 
 
 
@@ -84,6 +85,7 @@ class OrderModelTests(TestCase):
 
 
         self.order = Order.objects.create(
+
             username=self.user,
             type=self.type,
             academic=self.academic,
@@ -109,6 +111,9 @@ class OrderModelTests(TestCase):
     def test_total_cost_is_assigned_id_on_creation(self):
         self.assertEquals(self.order.total_cost, 8000)
         print ("the rate is {}".format(self.order.total_cost))
+
+
+
 
 
 
