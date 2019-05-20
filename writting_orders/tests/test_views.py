@@ -49,7 +49,17 @@ class OrderViewsTests(TestCase):
 
         )
 
-    
+    def test_order_list_view_GET(self):
+        #self.list_url = reverse('order-list')
+        #response = self.client.get(self.list_url)
+        #self.assertIn(self.order, response)
+        #self.assertEquals(response.status_code, 200)
+        #self.assertTemplateUsed(response, 'order_list.html')
+        resp = self.client.get(reverse('order-list'))
+        self.assertEquals(resp.status_code, 200)
+        self.assertIn(self.order1)
+        self.assertTemplateUsed(resp, 'order_list.html')
+        print (resp.status_code)
 
 
 
