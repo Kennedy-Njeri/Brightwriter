@@ -32,22 +32,7 @@ class OrderViewsTests(TestCase):
             name="CHICAGO"
         )
 
-        self.order1 = Order.objects.create(
-
-            username=self.user,
-            type=self.type,
-            academic=self.academic,
-            topic="Networking",
-            pages=4,
-            urgency=3,
-            format=self.format,
-            instructions="Write in bold",
-            pdf="server.pdf",
-            total=8000,
-            paid=False,
-            email="kennedy@gmail.com",
-
-        )
+       
 
     def test_order_list_view_GET(self):
         #self.list_url = reverse('order-list')
