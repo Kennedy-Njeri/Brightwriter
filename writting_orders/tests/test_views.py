@@ -59,7 +59,9 @@ class OrderViewsTests(TestCase):
 
         })
 
-       
+        order = Order.objects.get(id=3)
+
+        self.assertEquals(order.username, 'kennedy')
 
 
 
