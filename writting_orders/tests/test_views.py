@@ -40,24 +40,7 @@ class OrderViewsTests(TestCase):
         url = reverse('order-create')
 
 
-        response = self.client.post(url, {
-
-            'username': 'kennedy',
-            'type': 'self.type',
-            'academic': 'self.academic',
-            'topic': "Networking",
-            'pages': 4,
-            'urgency': 3,
-            'format': 'self.format',
-            'instructions': "Write in bold",
-            'pdf': "server.pdf",
-            'total': 8000,
-            'paid' : False,
-            'email': "kennedy@gmail.com",
-
-
-
-        })
+        
 
         order = Order.objects.get(id=3)
 
