@@ -37,7 +37,7 @@ PROCESS_CHOICES = (
 
 
 class Order(models.Model):
-    username = models.ForeignKey(User, related_name="user", on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     type = models.ForeignKey(Type, on_delete=models.CASCADE)
     academic = models.ForeignKey(AcademicLevel, on_delete=models.CASCADE, null=True)
     topic = models.CharField(max_length=30)

@@ -40,6 +40,6 @@ class OrderCreateForm(forms.ModelForm):
 
         model = Order
 
-        exclude = ('username',)
+        exclude = ('user',)
 
         fields = ['type', 'academic', 'topic', 'pages', 'urgency', 'format', 'instructions', 'pdf', 'email']
