@@ -38,7 +38,7 @@
 
     <tr>
          <td>{{ order.id }}</td>
-        
+
         <td>{{ order.topic }}</td>
           <td>{{ order.instructions | safe }}</td>
         <td>{{ order.urgency }}</td>
@@ -52,7 +52,9 @@
 
         {% if order.paid %}
 
+
         <td><button type="button" class="btn btn-success btn-sm">Paid</button></td>
+        
 
         {% endif %}
 
