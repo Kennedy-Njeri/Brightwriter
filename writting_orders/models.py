@@ -97,7 +97,6 @@ class Order(models.Model):
 
 
 
-
     class Meta:
 
         ordering = ['id']
@@ -106,6 +105,8 @@ class Order(models.Model):
     def __str__(self):
 
         return str(self.user)
+
+
 
 
 
