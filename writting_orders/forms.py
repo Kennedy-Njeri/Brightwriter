@@ -27,7 +27,6 @@ class RegistrationForm(UserCreationForm):
 
 
 
-
 class OrderCreateForm(forms.ModelForm):
 
     instructions = forms.CharField(
