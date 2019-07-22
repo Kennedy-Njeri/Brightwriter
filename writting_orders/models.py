@@ -98,9 +98,11 @@ class Order(models.Model):
 
 
 
+
     class Meta:
 
         ordering = ['id']
+        
 
 
     def __str__(self):
