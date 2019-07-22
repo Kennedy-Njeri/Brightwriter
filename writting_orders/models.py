@@ -69,7 +69,6 @@ class Order(models.Model):
 
 
 
-
     @property
     def total_cost(self):
 
