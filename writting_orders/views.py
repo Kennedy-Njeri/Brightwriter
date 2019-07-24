@@ -171,7 +171,6 @@ def search(request):
 
 
 """Details the Orders Paid"""
-
 class OrderPaidDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 
     model = Order
@@ -185,3 +184,5 @@ class OrderPaidDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user).filter(paid=True)
+
+
