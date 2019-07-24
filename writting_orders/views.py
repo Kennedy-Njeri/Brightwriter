@@ -141,6 +141,8 @@ class PaidListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
         return self.model.objects.filter(user=self.request.user).filter(paid=True)
 
 
+
+
 """Search For Orders Created or Paid"""
 def search(request):
 
