@@ -170,7 +170,6 @@ def search(request):
     return render(request, 'search_results.html', context)
 
 
-
 """Details the Orders Paid"""
 
 class OrderPaidDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
